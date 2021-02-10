@@ -6,7 +6,7 @@ import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
-@Table(name = "trm138")
+@Table(name = "trm251")
 public class TableModelTRM251 extends TableModel {
 
     private static final long serialVersionUID = 1L;

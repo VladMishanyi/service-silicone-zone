@@ -18,7 +18,7 @@ public abstract class TableModel implements Serializable, Cloneable{
     private static final Logger LOGGER = Logger.getLogger(TableModel.class);
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private long id;
 
