@@ -38,53 +38,7 @@ public class MasterSerialRTU {
                     batchRead,
                     false,
                     deviceModelTRM138.getModbusLocator0i(),
-                    deviceModelTRM138.getModbusLocator1i(),
-                    deviceModelTRM138.getModbusLocator2i(),
-                    deviceModelTRM138.getModbusLocator3i(),
-                    deviceModelTRM138.getModbusLocator4i(),
-                    deviceModelTRM138.getModbusLocator5i(),
-                    deviceModelTRM138.getModbusLocator6i(),
-                    deviceModelTRM138.getModbusLocator7i());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    101,
-                    deviceModelTRM138.getModbusLocator0h());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    201,
-                    deviceModelTRM138.getModbusLocator1h());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    301,
-                    deviceModelTRM138.getModbusLocator2h());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    401,
-                    deviceModelTRM138.getModbusLocator3h());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    501,
-                    deviceModelTRM138.getModbusLocator4h());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    601,
-                    deviceModelTRM138.getModbusLocator5h());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    701,
-                    deviceModelTRM138.getModbusLocator6h());
-
-            modbusInteger.writeDataToModBus(modbusMasterSerialModel3,
-                    deviceModelTRM138.getDeviceAddress(),
-                    801,
-                    deviceModelTRM138.getModbusLocator7h());
+                    deviceModelTRM138.getModbusLocator1i());
 
             System.out.println("Time elapsed: " + (System.currentTimeMillis() - startTime) + "ms");
             valFloat.forEach(System.out::println);

@@ -1,0 +1,17 @@
+
+###
+GET http://192.168.8.149:8080/database/trm138/get-last-row
+Accept: application/json
+
+###
+GET http://192.168.8.149:8080/database/trm138/get-current-date-time
+Accept: application/json
+
+###
+POST http://192.168.8.149:8080/database/trm138/range
+Content-Type: application/json
+
+{"from":"2021-02-02T15:00:00.187","to":"2021-02-02T17:00:00.187"}
+
+###
+
