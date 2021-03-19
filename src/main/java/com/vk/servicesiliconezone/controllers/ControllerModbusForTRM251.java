@@ -2,7 +2,8 @@ package com.vk.servicesiliconezone.controllers;
 
 import com.vk.servicesiliconezone.device.DeviceModelTRM251;
 import com.vk.servicesiliconezone.service.ServiceTRM251;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,7 @@ import java.util.Arrays;
 @RequestMapping(value = "/modbus/trm251")
 public class ControllerModbusForTRM251 {
 
-    private final Logger LOGGER = Logger.getLogger(this.getClass());
+    private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());
 
     private final ServiceTRM251 service;
 
