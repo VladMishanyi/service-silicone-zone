@@ -24,7 +24,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 @EnableJpaRepositories(basePackages = "com.vk.servicesiliconezone.repository.database")
 @ComponentScan(basePackages = "com.vk.servicesiliconezone")
-@PropertySource("classpath:databaseFirst.properties")
+@PropertySource("classpath:application.properties")
 public class DatabaseFirstConfig {
 
     @Value("${jdbc.driver}")
@@ -104,6 +104,7 @@ public class DatabaseFirstConfig {
         hikariConfig.setDriverClassName(this.jdbcDriver);
         hikariConfig.setMaximumPoolSize(this.initialSize);
         hikariConfig.setPoolName("springHikariCP");
+        hikariConfig.setConnectionInitSql("SET GLOBAL time_zone = "+ serverTimezone+" ;");
         hikariConfig.setConnectionTestQuery(this.validationQuery);
         return hikariConfig;
     }
